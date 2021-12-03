@@ -26,8 +26,8 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    background-color: white;
     z-index: 9;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .navbar-brand img{
     width: 150px;
@@ -114,7 +114,6 @@ header{
     width: 500px ;
     display: flex ;
     flex-wrap: nowrap !important;
-    background-color: blue;
 }
 .search{
     width: 80% !important ;
@@ -185,12 +184,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 0;
 }
 .menu-bottom ul li{
     padding: 8px 20px;
 }
 .menu-bottom ul li:hover{
-    background: rgba(255, 255, 255, 0.575);
+    background: rgba(255, 255, 255, 0.904);
 }
 .menu-bottom ul li a {
     display: flex;
@@ -209,7 +209,17 @@ header{
 .banner{
     margin-top: 160px;
 }
-.banner img{width: 100%; z-index: 1;}
+.banner img{
+    width: 100%;
+}
+.banner .col-md-8 img{
+    height: 300px;
+    z-index: 1;
+}
+.banner .col-md-4 img{
+    height: 145px;
+    z-index: 1;
+}
 
 /* reponsive */
 @media only screen and (max-width: 950px) {
