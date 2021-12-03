@@ -27,6 +27,7 @@ header{
     right: 0;
     left: 0;
     z-index: 9;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .navbar-brand img{
@@ -93,7 +94,7 @@ header{
     border: 1px solid rgba(128, 128, 128, 0.308);
 }
 .menuitem .listitem a:hover{
-    border-left:4px solid #fed700 ;
+    border-left:4px solid #ff0000 ;
     font-weight: bold;
 }
 .menuitem:hover .listitem{
@@ -180,11 +181,16 @@ header{
     width: 100%;
     background-color:#fed700 ;
 }
+.menu-bottom.hide{
+    display: none;
+}
 .menu-bottom ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
     margin-bottom: 0;
+    overflow-y: auto;
 }
 .menu-bottom ul li{
     padding: 8px 20px;
@@ -196,6 +202,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    white-space: nowrap;
 }
 .menu-bottom ul li a i{
     font-size: 25px;
@@ -226,8 +233,9 @@ header{
     .menuitem{
         display: none;
     }
-}
-@media only screen and (max-width: 850px) {
+    .menu-bottom.hide{
+        display: block;
+    }
     .bar-mob{
         display: block;
     }
@@ -285,5 +293,9 @@ header{
         right: 12px;
         z-index: 99;
         transition: 0.5s;
+        font-size: 40px;
+    }
+    .banner{
+        margin-top: 90px;
     }
 }

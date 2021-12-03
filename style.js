@@ -19,3 +19,11 @@ close.onclick=() =>{
     blackbg.classList.remove('active')
     close.classList.remove('active')
 }
+window.onscroll=() =>{
+    if(window.pageYOffset>40){
+        menu.classList.add('hide')
+    }
+    else{
+        menu.classList.remove('hide')
+    }
+}
