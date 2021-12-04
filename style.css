@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{background-color: #ECECEC!important;}
 a{color: black!important; }
 li{list-style: none;}
 a:hover{
@@ -226,6 +227,94 @@ header{
 .banner .col-md-4 img{
     height: 145px;
     z-index: 1;
+}
+.product{
+    margin-top: 20px;
+}
+.product .row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.list-product{
+    background-color: white;
+    padding:25px;
+    
+}
+.line-product{
+    margin-bottom: 20px ;
+    padding:0 15px !important;
+}
+
+.line-product .col-md-12{
+    padding: 10px 5px;
+    border:1px solid rgba(0, 0, 0, 0.061) !important;
+}
+.product img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.card{
+    border:1px solid rgba(0, 0, 0, 0.061) !important;
+}
+.product .card-img{
+    height: 250px;
+    border-bottom:0.3px solid rgba(0, 0, 0, 0.116);
+    overflow: hidden;
+    display: flex;
+}
+.card:hover img{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.card-title{
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+}
+.product .add-cart{
+    padding: 5px 15px;
+    background-color: white;
+    border: 1px solid rgba(255, 0, 0, 0.322);
+    border-radius: 50px;
+}
+.add-cart:hover{
+    background-color: red;
+    color: white;
+}
+.card-text{
+    color: red;
+    font-weight: 700;
+}
+.slide-product:hover .slick-arrow{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+.slick-arrow{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    height: 0;
+    border: none;
+    color: rgba(0, 0, 0, 0.336);
+    z-index: 7;
+    font-size: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.slick-arrow:focus{
+    border: none;
+    outline: none;
+}
+.slick-next{
+    right: 0;
+}
+.slick-prev{
+    left: 0;
 }
 
 /* reponsive */
