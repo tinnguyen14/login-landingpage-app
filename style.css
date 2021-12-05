@@ -368,8 +368,8 @@ header{
     display: flex;
     align-items: flex-start;
 }
-.footer .col-md-3 img{
-  width: 250px;
+.footer .col-lg-3 img{
+  width: 250px !important;
 }
 .footer p:first-child{
     font-weight: bold;
