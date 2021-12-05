@@ -375,6 +375,11 @@ header{
     font-weight: bold;
     font-size: 20px;
 }
+.bg-bottom{
+    background-color: #fed800;
+    color: white;
+    font-size: 20px;
+}
 /* reponsive */
 @media only screen and (max-width: 950px) {
     .menuitem{
