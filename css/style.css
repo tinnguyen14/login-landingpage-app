@@ -375,10 +375,12 @@ header{
     font-weight: bold;
     font-size: 20px;
 }
-.bg-bottom{
-    background-color: #fed800;
-    color: white;
-    font-size: 20px;
+.fab {
+    padding-right: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
 }
 /* reponsive */
 @media only screen and (max-width: 950px) {
