@@ -73,7 +73,7 @@ header{
 .menuitem{
     cursor: pointer;
 }
-.menuitem .item{
+.menuitem {
     position: relative;
 }
 .menuitem .menu{
@@ -82,7 +82,7 @@ header{
     align-items: center;
 }
 .listitem{
-    top: 75px;
+    top: 50px;
     width: 150px;
     position: absolute;
     opacity: 0;
@@ -389,6 +389,46 @@ header{
 .banner-sale  img{
     width: 100%;
     height: 300px;
+}
+.notlogin.active{
+    display: none;
+}
+.logged{
+    display: none;
+}
+.logged.active{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.logged.active:hover .logout{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+.logout{
+    top: 55px;
+    width: 150px;
+    position: absolute;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.logout a{
+    display: block;
+    padding:5px 5px;
+    border: 1px solid rgba(128, 128, 128, 0.308);
+}
+.logout a:hover{
+    border-left:4px solid #ff0000 ;
+    font-weight: bold;
+}
+.logged1{
+    display: none;
+}
+.logged1.active{
+    display: flex;
 }
 /* reponsive */
 @media only screen and (max-width: 950px) {
