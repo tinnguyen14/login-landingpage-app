@@ -78,12 +78,12 @@ function start() {
   getCourses(rederCourses);
 }
 start();
-function getCourses(callback) {
+function getCourses(data) {
   fetch(courseApi)
     .then(function (response) {
       return response.json();
     })
-    .then(callback);
+    .then(data);
 }
 function rederCourses(populars) {
   const popularz=document.querySelectorAll('.slide-product')
