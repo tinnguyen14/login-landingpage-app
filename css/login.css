@@ -46,3 +46,11 @@
     height: 50px;
     padding-right: 10px;
 }
+.erroruser{
+    float: left;
+    color: red;
+}
+.errorpassword{
+    float: left;
+    color: red;
+}

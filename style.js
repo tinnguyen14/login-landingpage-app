@@ -74,7 +74,6 @@ slides=() =>{
   });
 }
 
-
 var courseApi="http://localhost:3000/populars"
 function start(){
     getCourses(rederCourses)
@@ -88,8 +87,9 @@ function getCourses(callback){
    .then(callback)
 }
 function rederCourses(populars){
-        const popularz=document.querySelector('.slide-product')
-        const getData=populars.map(function(course) {
+        const popularz=document.querySelectorAll('.slide-product')
+        for (var i = 0; i < popularz.length; i++) {
+          const getData=populars.map(function(course) {
             return `
             <div class="col">
             <div class="card">
@@ -103,9 +103,12 @@ function rederCourses(populars){
         </div>
         `;
         })
-        popularz.innerHTML = getData.join(' ')
-       slides();
+        popularz[i].innerHTML = getData.join(' ')
     }
+    slides();
+  }
+  
+  
     const setUserName = () => {
       const notlogin = document.querySelectorAll('.notlogin')
       const logged = document.querySelector('.logged')
